@@ -4,13 +4,12 @@ def credit_card_checker_enhanced(credit_card_number)
   cleaned_number = credit_card_number.delete(' -')
   
   if cleaned_number.match?(CREDIT_CARD_REGEX_PATTERN) && valid_luhn_check?(cleaned_number)
-    # card_brand = cleaned_number[0] == '4' ? 'VISA' : 'MasterCard'
     card_brand =
-    case cleaned_number[0]
-    when '4' then 'VISA'
-    when '5' then 'MasterCard'
-    else 'Unknown'
-    end
+      case cleaned_number[0]
+      when '4' then 'VISA'
+      when '5' then 'MasterCard'
+      else 'Unknown'
+      end
     
     "Valid #{card_brand} credit card number"
   else
