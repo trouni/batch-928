@@ -1,2 +1,2 @@
-class ElectricCar
+class ElectricCar # UpperCamelCase
 end

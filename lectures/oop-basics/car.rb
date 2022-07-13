@@ -1,5 +1,5 @@
-class Car # UpperCamelCase
-  attr_reader :brand#, :color # defined in the accessor
+class Car
+  attr_reader :brand # , :color # defined in the accessor
   ## is equivalent to defining these methods:
   # def color
   #   @color
@@ -18,6 +18,7 @@ class Car # UpperCamelCase
   ##
 
   attr_accessor :color # creates both the reader and the writer
+
   ## is equivalent to defining these methods:
   # attr_reader :color
   # attr_writer :color
@@ -63,15 +64,15 @@ class Car # UpperCamelCase
   private
 
   def crank_engine
-    puts "Cranking the engine..."
+    puts 'Cranking the engine...'
   end
 
   def inject_fuel
-    puts "Injecting fuel..."
+    puts 'Injecting fuel...'
   end
 
   def spark_plugs
-    puts "Sparking plugs..."
+    puts 'Sparking plugs...'
   end
 end
 
@@ -79,6 +80,7 @@ malene = Car.new('green', 'Audi')
 koki = Car.new('red', 'Benz')
 
 puts "Malene's car is a #{malene.color} #{malene.brand}."
+puts "Koki's car is a #{koki.color} #{koki.brand}."
 
 puts "Malene's car engine is #{malene.started? ? 'on' : 'off'}."
 puts "Starting Malene's car..."
