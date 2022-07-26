@@ -1,0 +1,76 @@
+Q1 - What is a relational database?
+A database with multiple tables, which are connected through primary and foreign keys.
+
+Q2 - What are the different 'table relationships?'
+One-to-many (1:N)
+Many-to-many (N:N)
+One-to-one (1:1)
+
+
+Q3 - Consider this e-library service. An author, defined by his name have several books. A book, defined by its title and publishing year, has one author only. What's this simple database scheme. Please draw it!
+
+- see db.lewagon.org example
+
+Q4 - A user, defined by his email, can read several books. A book (e-book!!) can be read by several user. We also want to keep track of reading dates. Improve your e-library DB scheme with relevant tables and relationships.
+
+- see db.lewagon.org example
+
+Q5 - What's the language to make queries to a database?
+SQL - Structured Query Language
+
+Q6 - What's the simple query to get books written before 1985?
+
+-- see books controller
+
+Q7 - What's the simple query to get the 3 most recent books written by Jules Verne?
+
+-- see books controller
+
+Q8 - What's the purpose of ActiveRecord?
+(pattern) AR maps our Models with our Table columns (each column is an attribute in the model).
+(gem) Use Ruby to access our DB without writing SQL.
+
+
+Q9 - What's a migration?
+Migrations are used to make changes to your DB schema (changing, adding or removing columns / create, drop tables)
+
+
+   - How do you run a migration?
+rake db:migrate
+
+Q10 - Complete migrations to create your e-library database
+
+-- see migration files
+
+Q11 - Write a migration to add a category column to the books table.
+
+-- see migration file
+
+Q12 - Define an ActiveRecord model for each table of your DB. Add the ActiveRecord associations between models.
+
+-- see models
+
+Q13 - Complete the following code using the relevant ActiveRecord methods.
+
+-- see active_record_methods.rb
+
+Q14 - Add validations of your choice to the Author class. Can we save an object in DB if its validations do not pass?
+
+-- see author.rb
+
+
+Database roadmap:
+
+1.) Draw schema (on db.lewagon.org for instance)
+2.) Code migrations
+3.) Code models
+  -> Associations
+  -> Validations
+
+
+
+
+
+
+
+
