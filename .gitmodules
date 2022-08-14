@@ -1,0 +1,3 @@
+[submodule "lectures/the-spoon"]
+	path = lectures/the-spoon
+	url = git@github.com:trouni/the-spoon-928.git
