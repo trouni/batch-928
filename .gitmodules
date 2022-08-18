@@ -1,3 +1,6 @@
 [submodule "lectures/the-spoon"]
 	path = lectures/the-spoon
 	url = git@github.com:trouni/the-spoon-928.git
+[submodule "lectures/rails-search"]
+	path = lectures/rails-search
+	url = git@github.com:trouni/rails-search-928.git
